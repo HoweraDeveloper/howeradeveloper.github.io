@@ -6,7 +6,13 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "start": "hexo clean && hexo generate && hexo server",
+    "ggit": "git add . && git commit -m \"auto update (Power By Whitedragon)\" && git push",
+    "dp": "hexo clean && hexo generate && hexo deploy",
+    "dpall": "git add . && git commit -m \"auto update (Power By Whitedragon)\" && git push && hexo clean && hexo generate && hexo deploy && echo --------------------!= Push All File =!--------------------",
+    "wholedp": "echo ---------------- [ Start Commit and Push ] ---------------- && npm run ggit && echo ---------------- [ Start Updating Html ] ---------------- && hexo clean && hexo generate && echo ---------------- [ Start Deploying ] ---------------- && hexo deploy && echo --------------------!= Push All File =!-------------------- && echo ! Now starting the Server ! && hexo server",
+    "n-hack": "hexo new hackclass RENAME"
   },
   "hexo": {
     "version": "7.3.0"
