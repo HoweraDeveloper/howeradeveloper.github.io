@@ -96,5 +96,5 @@ theme: aurora
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:HoweraDeveloper/howeradeveloper.github.io.git
+  repo: https://github.com/HoweraDeveloper/howeradeveloper.github.io
   branch: master
