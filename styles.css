@@ -1,0 +1,81 @@
+span.wrap {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: Consolas;
+}
+
+@font-face {
+    font-family: 'TitleFont';
+    src: url('./fonts/MasaFont-Regular.woff2') format('woff2');
+}
+
+h1 {
+    font-size: 600%;
+    font-family: 'TitleFont' !important;
+}
+
+.text-light {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.speech-bubble {
+    margin-top: 40px;
+    color: black;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    width: fit-content;
+    padding: 3px;
+    position: relative;
+    background: #ffffff;
+    border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 35px solid transparent;
+	border-bottom-color: #ffffff;
+	border-top: 0;
+	border-left: 0;
+	margin-left: -17.5px;
+	margin-top: -35px;
+}
+
+.fa-shake {
+    --fa-animation-duration: 10s;
+}
+
+.rev {
+    --fa-animation-direction: reverse;
+}
+
+.navbar-brand {
+    font-family: 'TitleFont' !important;
+    font-size: 30px;
+}
+
+.part1 {
+    background-image: url('assets/landscape.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.contents a {
+    color: cyan;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
